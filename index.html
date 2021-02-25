@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header class="hero">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col-12 col-md-3 search-area">
+                <div>
+                    <form id="user-form">
+                        <label class="form-label">Search for a City:</label>
+                        <input name="city" id="city" type="text" autofocus="true" />
+                        <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div id="search-history-container">
+                    <!--search history saved in localstorage-->
+                </div>            
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="current-weather-container" id="current-weather-container">
+                            <!-- <h2 id="city-title"><span id="current-date"></span><span id="current-icon"></span></h2>
+                            <p>Temperature: <span id="current-temp"></span></p>
+                            <p>Humidity: <span id="current-humidity"></span></p>
+                            <p>Wind Speed: <span id="current-wind-speed"></span></p>
+                            <p>UV Index: <span id="current-uv-index"></span></p> -->
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="future-weather-container" id="future-weather-container">
+                            <!-- <h3>5-Day Forecast:</h3>
+                            <div class="card-container">
+                                <div class="card col-4 col-md-2">
+                                    <h4><span id="day-1-date"></span></h4>
+                                    <div><span id="day-1-icon"></span></div>
+                                    <p>Temp: <span id="day-1-temp"></span></p>
+                                    <p>Humidity: <span id="day-1-humidity"></span></p>
+                                </div>
+                                <div class="card col-4 col-md-2">
+                                    <h4><span id="day-2-date"></span></h4>
+                                    <div><span id="day-2-icon"></span></div>
+                                    <p>Temp: <span id="day-2-temp"></span></p>
+                                    <p>Humidity: <span id="day-2-humidity"></span></p>
+                                </div>
+                                <div class="card col-4 col-md-2">
+                                    <h4><span id="day-3-date"></span></h4>
+                                    <div><span id="day-3-icon"></span></div>
+                                    <p>Temp: <span id="day-3-temp"></span></p>
+                                    <p>Humidity: <span id="day-3-humidity"></span></p>
+                                </div>
+                                <div class="card col-6 col-md-2">
+                                    <h4><span id="day-4-date"></span></h4>
+                                    <div><span id="day-4-icon"></span></div>
+                                    <p>Temp: <span id="day-4-temp"></span></p>
+                                    <p>Humidity: <span id="day-4-humidity"></span></p>
+                                </div>
+                                <div class="card col-6 col-md-2">
+                                    <h4><span id="day-5-date"></span></h4>
+                                    <div><span id="day-5-icon"></span></div>
+                                    <p>Temp: <span id="day-5-temp"></span></p>
+                                    <p>Humidity: <span id="day-5-humidity"></span></p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
