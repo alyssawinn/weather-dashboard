@@ -29,6 +29,14 @@ body {
     padding: 10px;
 }
 
+.user-form {
+    margin-bottom: 25px;
+}
+
+input {
+    width: 70%;
+}
+
 .form-label {
     display: block;
     font-weight: bold;
@@ -40,6 +48,14 @@ body {
     border: 1px solid #75B6FD;
     padding: 3px 10px;
 }
+
+.searched-city {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #DFDFDF;
+    background-color: #fff;
+}
+
 /*SEARCH END*/
 
 /*CURRENT WEATHER START*/
@@ -68,6 +84,7 @@ body {
     display: inline-flex;
     width: 15%;
     padding: 5px;
+    margin-bottom: 5px;
     background-color: #007BFF;
     color: #fff;
 }
