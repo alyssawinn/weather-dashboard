@@ -117,12 +117,12 @@ var getSearchHistory = function() {
     searchHistoryItems = JSON.parse(localStorage.getItem("searchHistory"));
 
     if (!searchHistoryItems) {
-        return false;
+        searchHistoryItems = [];
     }
 
     for(var i = 0; i < searchHistoryItems.length; i++) {
         loadSearchHistory(searchHistoryItems[i]);
-    } 
+    }
 }
 
 var loadSearchHistory = function(city) {
@@ -144,7 +144,7 @@ var formSubmitHandler = function(event) {
         currentWeatherContainerEl.textContent = "";
         futureWeatherContainerEl.textContent = "";
         getCurrentWeather(city);
-
+        
         if (searchHistoryItems.includes(city)) {
             //do nothing
         } else {
